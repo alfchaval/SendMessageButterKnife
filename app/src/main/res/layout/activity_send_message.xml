@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/border"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.usuario.sendmessagebutterknife.SendMessageActivity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txvViewUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/usuario"
+                />
+
+            <EditText
+                android:id="@+id/edtUser"
+                android:layout_width="@dimen/edtWidth"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombre_de_usuario"
+                android:maxLines="1"
+                android:maxLength="30"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/separation">
+
+            <TextView
+                android:id="@+id/txvViewMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mensaje"
+                />
+
+            <EditText
+                android:id="@+id/edtMessage"
+                android:layout_width="@dimen/edtWidth"
+                android:layout_height="wrap_content"
+                android:hint="@string/contenido_del_mensaje"
+                android:maxLines="10"
+                android:maxLength="300"/>
+
+        </TableRow>
+
+        <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:layout_marginTop="@dimen/separation"
+        />
+
+    </TableLayout>
+
+
+
+</LinearLayout>
